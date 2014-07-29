@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+gem=$1
+gem_path=$(bundle show $gem)
+readme="${gem_path}/README*"
+open $readme
